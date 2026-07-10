@@ -17,7 +17,6 @@ Skills follow the [Agent Skills](https://agentskills.io) standard and work with 
 | Skill | What it does |
 | ----- | ------------ |
 | [`databricks-cost-leak-hunter`](skills/databricks-cost-leak-hunter) | Hunt down Databricks cost leaks — wasted DBUs, idle clusters, oversized SQL warehouses, untagged runaway spend — and produce a FinOps cost report. Ships with reference docs, helper scripts, and a behavioral eval spec. |
-| [`wallet`](skills/wallet) | Agent Wallet — create a policy-bounded wallet the agent can use for EVM transfers, swaps, and contract calls without exposing private keys. |
 
 More are on the way — the top-graded skills from the marketplace are being rolled out here. The full catalog lives at [tonsofskills.com](https://tonsofskills.com) and installs as Claude Code plugins via:
 
@@ -29,4 +28,4 @@ More are on the way — the top-graded skills from the marketplace are being rol
 
 - Canonical source: [`jeremylongshore/claude-code-plugins-plus-skills`](https://github.com/jeremylongshore/claude-code-plugins-plus-skills) — skills here are published snapshots of the marketplace copies (this cut: `7ffa06a3d`).
 - `databricks-cost-leak-hunter` optionally pairs with the `databricks` CLI and the pack's workspace MCP server for live-workspace probes; without them it still guides the full manual audit path.
-- License: MIT (per-skill frontmatter is authoritative; the `wallet` skill predates this README and carries its own terms in-skill).
+- License: MIT (per-skill frontmatter is authoritative).
